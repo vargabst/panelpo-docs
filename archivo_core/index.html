@@ -1,0 +1,1207 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../archivo_panel_po_us/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Back End (Proceso interno) - Panel PO - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#back-end-proceso-interno" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Panel PO - Documentation" class="md-header__button md-logo" aria-label="Panel PO - Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Panel PO - Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Back End (Proceso interno)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Panel PO US
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Back End (Proceso interno)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../archivo_panel_po_us/" class="md-tabs__link">
+        
+  
+    
+  
+  Front End (Interfaz)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../clase_PanelUS/" class="md-tabs__link">
+        
+  
+    
+  
+  Clase PanelUS
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Panel PO - Documentation" class="md-nav__button md-logo" aria-label="Panel PO - Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Panel PO - Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Panel PO US
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Back End (Proceso interno)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Back End (Proceso interno)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paquetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paquetes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funciones-nativas-en-archivo-corepy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funciones nativas en Archivo 'core.py'
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funciones nativas en Archivo 'core.py'">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coreinstantessalidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.InstantesSalidas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreredondear_al_minuto" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.redondear_al_minuto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreint_codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.int_codigo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corenew_durac_periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.new_durac_periodo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreduracion_ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.duracion_ok
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coremelting_cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.melting_cons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corereplace_char" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.replace_char
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coredifference_between_dt_times" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.difference_between_dt_times
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corefilechoose" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.fileChoose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreformulacheck" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.formulaCheck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corehiddensheetscheck" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.hiddenSheetsCheck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreis_valid_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.is_valid_time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coretimeformatcheck" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.timeFormatCheck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corechunker" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.chunker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corechunker_df" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.chunker_df
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreget_second_minimum" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.get_second_minimum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreconvertir_horario_dia_siguiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.convertir_horario_dia_siguiente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corearreglar_horarios_inicio_fin" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.arreglar_horarios_inicio_fin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreget_first_and_last_exp" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.get_first_and_last_exp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreget_limits_tramos" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.get_limits_tramos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corefilter_max_values_dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.filter_max_values_dict
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coredt_time_to_hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.dt_time_to_hours
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corecomp_durac_tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.comp_durac_tolerance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corecomp_iprog_tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.comp_iprog_tolerance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corehas_more_than_two_decimals" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.has_more_than_two_decimals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corehas_seconds_greater_than_zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.has_seconds_greater_than_zero
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corecount_zeroes" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.count_zeroes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreasignacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.asignacion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coredt_time_to_dt_dt" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.dt_time_to_dt_dt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreall_to_dt_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.all_to_dt_time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coredelete_files_in_folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.delete_files_in_folder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreperiodo_inicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.periodo_inicio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#corenew_periodo_inicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.new_periodo_inicio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreaux_salidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.aux_salidas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coreclasif_an_frec" class="md-nav__link">
+    <span class="md-ellipsis">
+      core.clasif_an_frec
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clase-panelus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clase PanelUS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clase PanelUS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos iniciales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archivo_panel_po_us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Front End (Interfaz)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clase_PanelUS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Clase PanelUS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="back-end-proceso-interno">Back End (Proceso interno)</h1>
+<h2 id="paquetes">Paquetes</h2>
+<ul>
+<li><code>pandas</code> - Procesamiento de datos estructurados.</li>
+<li><code>os</code> - Uso de funciones del sistema operativo.</li>
+<li><code>openpyxl</code> - Tratamiento de archivos Excel.</li>
+<li><code>tkinter</code> - Generación de interfaces.</li>
+<li><code>numpy</code> - Realización de cálculos complejos.</li>
+<li><code>datetime</code> - Uso de fechas y horas.</li>
+<li><code>pickle</code> - Encriptación de archivos (memoria).</li>
+<li><code>re</code> - Uso de lógicas de expresiones regulares.</li>
+<li><code>math</code> - Librería nativa de Python para operaciones complejas.</li>
+<li><code>tempfile</code> - Uso de archivos temporales.</li>
+</ul>
+<h2 id="funciones-nativas-en-archivo-corepy">Funciones nativas en Archivo 'core.py'</h2>
+<h3 id="coreinstantessalidas">core.InstantesSalidas</h3>
+<p><em>core.</em><strong>InstantesSalidas</strong>(inicio_periodo:<em> datetime</em>, intervalo:<em> int</em>, nSalidas:<em> int</em>)</p>
+<p>Esta función retorna una lista con una cantidad definida de instantes de tiempo en el formato HH:MM:SS iniciando en inicio_periodo, espaciados de acuerdo al intervalo.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>inicio_periodo</code>: Instante en formato HH:MM:SS.</li>
+<li><code>intervalo</code>: Valor de espaciamiento entre instantes (en minutos).</li>
+<li><code>nSalidas</code>: Valor de cantidad de instantes a generar.</li>
+</ul>
+<hr />
+<h3 id="coreredondear_al_minuto">core.redondear_al_minuto</h3>
+<p><em>core.</em><strong>redondear_al_minuto</strong>(td: <em>timedelta</em>, min_=1: <em>int</em>)</p>
+<p>Redondea un timedelta. Por defecto es al minuto.
+Se puede indicar como segundo argumento una cantidad decimal de minutos. (ej: 30s -&gt; 0.5)</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>td</code>: Valor de tipo <em>timedelta</em>.</li>
+<li><code>min_</code>:  Valor de minutos en decimal.</li>
+</ul>
+<hr />
+<h3 id="coreint_codigo">core.int_codigo</h3>
+<p><em>core.</em><strong>int_codigo</strong>(codigo: <em>str)</em></p>
+<p>Convierte un código desde string a int (si es posible).</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>codigo</code>: Valor de tipo <em>str</em>.</li>
+</ul>
+<hr />
+<h3 id="corenew_durac_periodo">core.new_durac_periodo</h3>
+<p><em>core.</em><strong>new_durac_periodo</strong>(d2: <em>datetime</em>, d1: <em>datetime)</em></p>
+<p>Calcula la duración de un periodo de tiempo entre d1 y d2.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>d2</code>: Máximo valor del periodo.</li>
+<li><code>d1</code>: Mínimo valor del periodo.</li>
+</ul>
+<hr />
+<h3 id="coreduracion_ok">core.duracion_ok</h3>
+<p><em>core.</em><strong>duracion_ok</strong>(row: <em>pandas.Series)</em></p>
+<p>Analiza una fila de un DataFrame con las columnas 'DURACION' y 'DURACION_MOD'. Si la columna 'DURACION_MOD' es nula o igual a cero, entonces retorna el valor de la columna 'DURACION'; si no, retorna el valor de la columna 'DURACION_MOD'</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>row</code>: Fila del DataFrame a analizar.</li>
+</ul>
+<hr />
+<h3 id="coremelting_cons">core.melting_cons</h3>
+<p><em>core.</em><strong>melting_cons</strong>(cons: <em>pandas.DataFrame</em>, version=1: <em>int)</em></p>
+<p>Convierte los nombres de las columnas de un Consolidado de Salidas en una sola columna con valores. Si la versión es 1, entonces permite aplicar la función en columnas con abreviaciones en unidad, servicio y sentido. Si la versión es distinta de 1, entonces permite aplicar la función en columnas con los nombres originales.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>cons</code>: DataFrame del archivo Consolidado de Salidas.</li>
+<li><code>version</code>: Valor que define el tipo de <code>pandas.melt</code> a utilizar.</li>
+</ul>
+<hr />
+<h3 id="corereplace_char">core.replace_char</h3>
+<p><em>core.</em><strong>replace_char</strong>(s: <em>str</em>, old_char: <em>str</em>, new_char: <em>int)</em></p>
+<p>Reemplaza un carácter por otro en un string.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>s</code>: String a alterar.</li>
+<li><code>old_char</code>: Valor del carácter del string que se necesita reemplazar.</li>
+<li><code>new_char</code>: Valor del carácter del string que se desea incorporar.</li>
+</ul>
+<hr />
+<h3 id="coredifference_between_dt_times">core.difference_between_dt_times</h3>
+<p><em>core.</em><strong>difference_between_dt_times</strong>(a: <em>timestamp</em>, b: <em>timestamp</em>)</p>
+<p>Retorna la diferencia (en horas) entre los tiempos a y b.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>a</code>: <em>Timestamp</em> de interés.</li>
+<li><code>b</code>: <em>Timestamp</em> de interés.</li>
+</ul>
+<hr />
+<h3 id="corefilechoose">core.fileChoose</h3>
+<p><em>core.</em><strong>fileChoose</strong>()</p>
+<p>Llama a la función <em>askopenfilename</em> de la librería <em>filedialog</em>. Esta abre una ventana de Windows para obtener el nombre de un archivo. Retorna el nombre del archivo seleccionado.</p>
+<hr />
+<h3 id="coreformulacheck">core.formulaCheck</h3>
+<p><em>core.</em><strong>formulaCheck</strong>(filename: <em>str</em>)</p>
+<p>Verifica que el archivo Excel a cargar no tenga fórmulas en alguna de sus celdas.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>filename</code>: Nombre del archivo Excel seleccionado.</li>
+</ul>
+<hr />
+<h3 id="corehiddensheetscheck">core.hiddenSheetsCheck</h3>
+<p><em>core.</em><strong>hiddenSheetsCheck</strong>(filename: <em>str</em>)</p>
+<p>Verifica que el archivo Excel a cargar no tenga hojas ocultas.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>filename</code>: Nombre del archivo Excel seleccionado.</li>
+</ul>
+<hr />
+<h3 id="coreis_valid_time">core.is_valid_time</h3>
+<p><em>core.</em><strong>is_valid_time</strong>(value: <em>any</em>)</p>
+<p>Verifica que el valor sea de tipo <em>datetime.time</em>.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>value</code>: Valor a analizar.</li>
+</ul>
+<hr />
+<h3 id="coretimeformatcheck">core.timeFormatCheck</h3>
+<p><em>core.</em><strong>timeFormatCheck</strong>(filename: <em>str</em>)</p>
+<p>Verifica que las marcas horarias en el archivo Excel sean de tipo <em>datetime.time</em>.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>filename</code>: Nombre del archivo Excel seleccionado.</li>
+</ul>
+<hr />
+<h3 id="corechunker">core.chunker</h3>
+<p><em>core.</em><strong>chunker</strong>(seq: <em>list</em>, size: <em>int</em>)</p>
+<p>Genera una estructura auxiliar de datos para recorrer una lista seleccionando <em>size</em> elementos.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>seq</code>: La lista de valores a intervenir.</li>
+<li><code>size</code>: Cantidad de elementos a agrupar de la lista.</li>
+</ul>
+<hr />
+<h3 id="corechunker_df">core.chunker_df</h3>
+<p><em>core.</em><strong>chunker_df</strong>(seq: <em>pandas.DataFrame</em>, size: <em>int</em>)</p>
+<p>Genera una estructura auxiliar de datos para recorrer un dataframe seleccionando <em>size</em> filas.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>seq</code>: Dataframe a intervenir.</li>
+<li><code>size</code>: Cantidad de filas a agrupar del dataframe.</li>
+</ul>
+<hr />
+<h3 id="coreget_second_minimum">core.get_second_minimum</h3>
+<p><em>core.</em><strong>get_second_minimum</strong>(x: <em>list</em>)</p>
+<p>Entrega el segundo valor mínimo (mayor que el mínimo global)</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>x</code>: Lista con elementos ordenables.</li>
+</ul>
+<hr />
+<h3 id="coreconvertir_horario_dia_siguiente">core.convertir_horario_dia_siguiente</h3>
+<p><em>core.</em><strong>convertir_horario_dia_siguiente</strong>(hi: <em>timestamp</em>, ht: <em>timestamp</em>)</p>
+<p>Retorna los horarios <em>hi</em> y <em>ht</em> (usualmente tomados desde las primera y última marca horaria programada como salida) en formato "DD/MM/YYYY HH:MM:SS" para realizar operaciones de comparación en programación de operaciones. Esta función permite convertir el mayor horario al día siguiente para permitir operaciones de comparación consistentes.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>hi</code>: Marca horaria menor.</li>
+<li><code>ht</code>: Marca horaria mayor.</li>
+</ul>
+<hr />
+<h3 id="corearreglar_horarios_inicio_fin">core.arreglar_horarios_inicio_fin</h3>
+<p><em>core.</em><strong>arreglar_horarios_inicio_fin</strong>(first_exp_time: <em>timestamp</em>, second_exp_time: <em>timestamp</em>, last_exp_time: <em>timestamp</em>)</p>
+<p>Retorna los horarios de inicio (menor) y de fin (mayor) (usualmente tomados desde las primera y última marca horaria programada como salida) en formato "DD/MM/YYYY HH:MM:SS" para realizar operaciones de comparación en programación de operaciones. Esta función realiza una estrategia de comparación en la diferencia entre la primera y la segunda marca horaria del día, para estimar correctamente la posición (en días) del horario mayor.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>first_exp_time</code>: Marca horaria menor.</li>
+<li><code>second_exp_time</code>: Marca horaria segunda menor.</li>
+<li><code>last_exp_time</code>: Marca horaria mayor.</li>
+</ul>
+<hr />
+<h3 id="coreget_first_and_last_exp">core.get_first_and_last_exp</h3>
+<p><em>core.</em><strong>get_first_and_last_exp</strong>(sub_df: <em>pandas.DataFrame</em>)</p>
+<p>Esta función recibe un subconjunto de filas de la tabla Anexo 4 cargada en el programa y entrega los tiempos de la primera (menor) y última (mayor) salida programada.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>sub_df</code>: Subconjunto del DataFrame del Anexo 4 cargado.</li>
+</ul>
+<hr />
+<h3 id="coreget_limits_tramos">core.get_limits_tramos</h3>
+<p><em>core.</em><strong>get_limits_tramos</strong>(sub_df: <em>pandas.DataFrame</em>)</p>
+<p>Esta función recibe un subconjunto de filas de la tabla Anexo 4 cargada en el programa y retorna un dataframe con  los tiempos de la primera (menor) y última (mayor) salida programada, por cada tramo horario definido en un tipo de día. Esta función se aplica en los casos en los que se sabe que el servicio-sentido-tipodía tiene dos tramos. </p>
+<p>Parámetros:</p>
+<ul>
+<li><code>sub_df</code>: Subconjunto del DataFrame del Anexo 4 cargado.</li>
+</ul>
+<hr />
+<h3 id="corefilter_max_values_dict">core.filter_max_values_dict</h3>
+<p><em>core.</em><strong>filter_max_values_dict</strong>(dict_obj: <em>dict</em>)</p>
+<p>Esta función recibe un diccionario, el cual tiene valores enteros; y retorna otro diccionario filtrado solo con valores mayores a 3. </p>
+<p>Parámetros:</p>
+<ul>
+<li><code>dict_obj</code>: Diccionario con valores enteros.</li>
+</ul>
+<hr />
+<h3 id="coredt_time_to_hours">core.dt_time_to_hours</h3>
+<p><em>core.</em><strong>dt_time_to_hours</strong>(time: <em>datetime.time</em>)</p>
+<p>Esta función recibe una marca horaria y retorna la cantidad de horas de la marca (con decimales)</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>time</code>: Marca horaria</li>
+</ul>
+<hr />
+<h3 id="corecomp_durac_tolerance">core.comp_durac_tolerance</h3>
+<p><em>core.</em><strong>comp_durac_tolerance</strong>(durac_a3: <em>datetime.time</em>, durac_a4: <em>datetime.time</em>)</p>
+<p>Esta función aplica la regla de tolerancia en la duración de las expediciones según el Anexo 4, dependiente de la duración programada según el Anexo 3. Retorna un booleano y los límites de tolerancia calculados.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>durac_a3</code>: Duración en minutos de las expediciones programadas en el servicio-sentido-tipodía-mediahora.</li>
+<li><code>durac_a4</code>: Duración en minutos de la expedición programada en el servicio-sentido-tipodía.</li>
+</ul>
+<hr />
+<h3 id="corecomp_iprog_tolerance">core.comp_iprog_tolerance</h3>
+<p><em>core.</em><strong>comp_iprog_tolerance</strong>(iprog: <em>int</em>, imin: <em>int</em>, imax: <em>int</em>)</p>
+<p>Esta función aplica la regla de tolerancia en los intervalos de salidas del Anexo 4, de acuerdo con la programación calculada por salidas por media hora según el Anexo 3.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>iprog</code>: Intervalo promedio calculado desde Anexo 3 (tiempo/salidas)</li>
+<li><code>imin</code>: Mínimo intervalo observado en la programación de salidas según Anexo 4.</li>
+<li><code>imax</code>: Máximo intervalo observado en la programación de salidas según Anexo 4.</li>
+</ul>
+<hr />
+<h3 id="corehas_more_than_two_decimals">core.has_more_than_two_decimals</h3>
+<p><em>core.</em><strong>has_more_than_two_decimals</strong>(value: <em>float</em>)</p>
+<p>Esta función chequea si un valor tiene más de dos decimales. Retorna True si tiene más de dos decimales, False en caso contrario.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>value</code>: Valor a analizar.</li>
+</ul>
+<hr />
+<h3 id="corehas_seconds_greater_than_zero">core.has_seconds_greater_than_zero</h3>
+<p><em>core.</em><strong>has_seconds_greater_than_zero</strong>(time_obj: <em>datetime.time</em>)</p>
+<p>Esta función chequea si un horario tiene segundos.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>time_obj</code>: Marca horaria a analizar.</li>
+</ul>
+<hr />
+<h3 id="corecount_zeroes">core.count_zeroes</h3>
+<p><em>core.</em><strong>count_zeroes</strong>(list_: <em>list</em>)</p>
+<p>Esta función cuenta cuántos ceros hay al inicio y al final de una lista. Retorna las cantidades en una tupla.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>list_</code>: Lista con valores enteros.</li>
+</ul>
+<hr />
+<h3 id="coreasignacion">core.asignacion</h3>
+<p><em>core.</em><strong>asignacion</strong>(salidas_periodo: <em>int</em>, duracion_periodo: <em>int</em>, grad: <em>int</em>, mhvaciasinicio=0: <em>int</em>, mhvaciastermino=0: <em>int</em>)</p>
+<p>Esta función realiza la distribución de salidas originalmente en un periodo, por cada media hora de operación del servicio-sentido-tipodía.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>salidas_periodo</code>: Cantidad de salidas asociadas al servicio-sentido-periodo.</li>
+<li><code>duracion_periodo</code>: Duracion (en horas) del periodo.</li>
+<li><code>grad</code>: Valor que indica si el próximo periodo aumenta o disminuye salidas.</li>
+<li><code>mhvaciasinicio</code>: Cantidad de medias horas sin salidas al inicio del periodo.</li>
+<li><code>mhvaciastermino</code>: Cantidad de medias horas sin salidas al final del periodo.</li>
+</ul>
+<hr />
+<h3 id="coredt_time_to_dt_dt">core.dt_time_to_dt_dt</h3>
+<p><em>core.</em><strong>dt_time_to_dt_dt</strong>(time: <em>any</em>)</p>
+<p>Esta función recibe una marca horaria y la convierte en objeto datetime.datetime.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>time</code>: Marca horaria.</li>
+</ul>
+<hr />
+<h3 id="coreall_to_dt_time">core.all_to_dt_time</h3>
+<p><em>core.</em><strong>all_to_dt_time</strong>(dt_time: <em>any</em>)</p>
+<p>Esta función recibe una marca horaria (en cualquier formato) y la convierte en objeto datetime.datetime.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>dt_time</code>: Marca horaria.</li>
+</ul>
+<hr />
+<h3 id="coredelete_files_in_folder">core.delete_files_in_folder</h3>
+<p><em>core.</em><strong>delete_files_in_folder</strong>(folder_path: <em>str</em>)</p>
+<p>Esta función recibe la dirección de una carpeta en el ordenador, y elimina todos los archivos en su interior.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>folder_path</code>: Dirección de una carpeta particular.</li>
+</ul>
+<hr />
+<h3 id="coreperiodo_inicio">core.periodo_inicio</h3>
+<p><em>core.</em><strong>periodo_inicio</strong>(hora: <em>int</em>, minutos: <em>int</em>)</p>
+<p>Esta función recibe un valor de horas y un valor de minutos, y retorna un objeto de tipo datetime.time aproximado a la media hora anterior de la marca horaria.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>hora</code>: Valor de horas.</li>
+<li><code>minutos</code>: Valor de minutos.</li>
+</ul>
+<hr />
+<h3 id="corenew_periodo_inicio">core.new_periodo_inicio</h3>
+<p><em>core.</em><strong>new_periodo_inicio</strong>(hora: <em>int</em>)</p>
+<p>Esta función recibe un valor de horas, y retorna un objeto de tipo datetime.time aproximado a la hora de la marca horaria.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>hora</code>: Valor de horas.</li>
+</ul>
+<hr />
+<h3 id="coreaux_salidas">core.aux_salidas</h3>
+<p><em>core.</em><strong>aux_salidas</strong>(s_ant: <em>int</em>, s: <em>int</em>, s_sig: <em>int</em>)</p>
+<p>Esta función recibe tres valores de salidas (para tres MH consecutivas) y retorna valores intermedios en función de ellos.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>s_ant</code>: Cantidad de salidas de la MH anterior.</li>
+<li><code>s</code>: Cantidad de salidas de la MH actual.</li>
+<li><code>s_sig</code>: Cantidad de salidas de la MH siguiente.</li>
+</ul>
+<hr />
+<h3 id="coreclasif_an_frec">core.clasif_an_frec</h3>
+<p><em>core.</em><strong>clasif_an_frec</strong>(frec: <em>float</em>)</p>
+<p>Esta función recibe un valor de frecuencias y retorna una clasificación para el análisis de frecuencias.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>frec</code>: Valor real asociado a buses por hora en un periodo.</li>
+</ul>
+<h2 id="clase-panelus">Clase PanelUS</h2>
+<h3 id="atributos-iniciales">Atributos iniciales</h3>
+<ul>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.cons_un_chose_gate</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+<li><code>PanelUS.unidad</code></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
