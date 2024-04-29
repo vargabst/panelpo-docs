@@ -457,27 +457,824 @@ Parámetros:
 
 ### Atributos iniciales
 
-* `PanelUS.unidad`
-* `PanelUS.cons_un_chose_gate`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
-* `PanelUS.unidad`
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__unidad__ </span> 
+
+(type: _str_, default = '0')
+
+Variable que guarda el valor de la unidad de servicio seleccionada por usuario para generar revisiones específicas en Panel.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo1__ </span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información completa del Anexo 1.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo1_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 1 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo3__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información completa del Anexo 3 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo3_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 3 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo3b__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información completa del Anexo 3 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo3b_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 3 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información completa del Anexo 4 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 4 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4_solocomerc__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información de salidas comerciales (C01) del Anexo 4 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4_capac__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información de capacidades de buses del Anexo 4 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4b__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información completa del Anexo 4 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4b_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 4 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4b_solocomerc__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información de salidas comerciales (C01) del Anexo 4 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4b_capac__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información de capacidades de buses del Anexo 4 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consolidado__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información del Consolidado de Salidas.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consolidado_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Consolidado de Salidas.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consolidado_frec__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con información de frecuencias, calculadas desde el Consolidado de Salidas.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consolidado_par__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información del Registro Consolidado de Paradas.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consolidado_par_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información del Registro Consolidado de Paradas.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__base_cons__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con la información base de Servicios-Sentido en el orden preestablecido histórico de los Consolidados.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__base_cons_name__</span>
+
+(type: _str_, default = 'No cargado')
+
+Variable que guarda el nombre del archivo Excel que contiene la información base de Servicios-Sentido en el orden preestablecido histórico de los Consolidados.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__periodos__</span>
+
+(type: _pandas.DataFrame_, default = Información de Periodos*)
+
+Variable que guarda la estructura del DataFrame con información de periodos según tipo día, media hora, duración de cada periodo y otras columnas que auxilian la tarea de distribución de salidas asignadas por periodo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__periodos_data__</span>
+
+(type: _pandas.DataFrame_, default = Información de Periodos*)
+
+Variable que guarda la estructura del DataFrame con información de periodos según tipo día y media hora. Guarda la estructura original de la tabla anterior, sin las columnas auxiliares del proceso de distribución de salidas asignadas por periodo
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__gradiente__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de tendencias en la asignación de salidas por periodo en el Consolidado. Por ejemplo, si en el siguiente periodo aumentan o disminuyen las salidas. 
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo3_w_inconsist__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante del análisis de consistencia del Anexo 3 Nuevo. 
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo4_w_inconsist__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante del análisis de consistencia del Anexo 4 Nuevo. 
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__validacion_a4_a1__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante de la comparación de horarios de salida (A4) y operación (A1).
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__validacion_a4_a3__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante de la comparación de parámetros de operación definidos en Anexo 3 y Anexo 4.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__validacion_a4_a3_x_mha__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante de la comparación de parámetros de operación definidos en Anexo 3 y Anexo 4, por media hora agrupada según Anexo 3.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__result_comp_a3v_a3n__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante de la comparación de parámetros de operación definidos en Anexo 3 Nuevo y Anexo 3 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__validacion_a4_interv_mha_trusted__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame resultante de la validación de intervalos programados de salidas en el Anexo 4, considerando las agrupaciones del Anexo 3.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo1_new__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con la información formateada del Anexo 1, construido a partir del Anexo 4.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_from_a4_final__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con la información formateada del Anexo 3, construido a partir del Anexo 4.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a4_from_a3__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con la información formateada del Anexo 4, construido a partir del Anexo 3.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__anexo3_ns_w_base__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información formateada del Anexo 3, construido a partir del Consolidado de Salidas (distribuidas).
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__perfil_flota__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de cantidad de flota operando por cada media hora en una unidad.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_frec__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de frecuencias consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_cap__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de capacidades consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_sal__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de salidas consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_vel__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de velocidades promedio consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_dist__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de distancias totales consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_dist_int__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de distancias totales consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_a3_fmax__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de flota máxima consolidada por periodo, para preparar el archivo Consolidado de Parámetros.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_cons_mh__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información consolidada de frecuencias por media hora.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_lab_n__</span>
+
+(type: _bool_, default = False)
+
+Variable booleana que identifica si hay días laborales en el Anexo 3 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_sab_n__</span>
+
+(type: _bool_, default = False)
+
+Variable booleana que identifica si hay días sábado en el Anexo 3 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_dom_n__</span>
+
+(type: _bool_, default = False)
+
+Variable booleana que identifica si hay días domingo en el Anexo 3 Nuevo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_lab_v__</span>
+
+(type: _bool_, default = False)
+
+Variable booleana que identifica si hay días laborales en el Anexo 3 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_sab_v__</span>
+
+(type: _bool_, default = False)
+
+Variable booleana que identifica si hay días sábado en el Anexo 3 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_dom_v__</span>
+
+(type: _bool_, default = False)
+
+Variable booleana que identifica si hay días domingo en el Anexo 3 Vigente.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__df_km__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con información de kilómetros totales por tipo día.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_interv__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con información de intervalo promedio de salidas por periodo (formato Consolidado).
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cuenta_ss__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información de cantidad de Servicios-Sentido por unidad y por periodo que se agregan por cada categoría de frecuencias.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__perc_ss_nivel_frec__</span>
+
+(type: _pandas.DataFrame_, default = None)
+
+Variable que guarda la estructura del DataFrame con información final de proporciones (porcentaje) de Servicios-Sentido por unidad y por periodo que se agregan por cada categoría de frecuencias.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__revision_biportal__</span>
+
+(type: _pandas.DataFrame_, default = pandas.DataFrame())
+
+Variable que guarda la estructura del DataFrame con información de salidas programadas en Anexo 4 asignadas erróneamente a buses que no pueden operar en servicios que atienden paraderos de puerta izquierda.
+
+---
+
+### Funciones (métodos)
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__reset__</span>
+
+_PanelUS_.**reset**()
+
+Reinicia todos los atributos iniciales del Panel.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consulta_de_salidas__</span>
+
+_PanelUS_._**consulta_de_salidas**(servicio: _str_, sentido: _str_, periodo: _str_)
+
+Lee el Consolidado de Salidas y retorna el número de salidas efectuadas durante el periodo según el consolidado. Si no encuentra el Servicio-Sentido-Periodo retorna un valor NaN.
+        
+Parámetros
+
+* `servicio`: Identificador del servicio (Código TS) 
+* `sentido`: Identificador del sentido ("Ida", "Ret")
+* `periodo`: Identificador del periodo (Abreviatura)
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consulta_de_gradiente__</span>
+
+_PanelUS_._**consulta_de_gradiente**(servicio: _str_, sentido: _str_, periodo: _str_)
+
+Lee el Consolidado de Salidas y retorna el valor del gradiente en el periodo según el consolidado-gradiente. Si no encuentra el Servicio-Sentido-Periodo retorna un valor NaN.
+        
+Parámetros
+
+* `servicio`: Identificador del servicio (Código TS) 
+* `sentido`: Identificador del sentido ("Ida", "Ret")
+* `periodo`: Identificador del periodo (Abreviatura)
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__save_all_anexos__</span>
+
+_PanelUS_._**save_all_anexos**()
+
+Guarda todos los archivos cargados en el Panel, en formato encriptado, para permitir su recarga al reiniciar el programa.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_all_anexos__</span>
+
+_PanelUS_._**load_all_anexos**(files_in_memory: _list_)
+
+Carga todos los archivos guardados en la memoria del Panel.
+        
+Parámetros
+
+* `files_in_memory`: Lista con los nombres de los archivos guardados en la memoria del panel. 
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__clear_all_anexos__</span>
+
+_PanelUS_._**clear_all_anexos**(path_: _str_)
+
+Borra todos los archivos guardados en la memoria del Panel.
+        
+Parámetros
+
+* `path_`: Nombre de la dirección de la carpeta de memoria. 
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_A1__</span>
+
+_PanelUS_._**load_A1**()
+
+Proceso que carga un archivo Excel Anexo 1 Nuevo.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_A3__</span>
+
+_PanelUS_._**load_A3**()
+
+Proceso que carga un archivo Excel Anexo 3 Nuevo.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_A4__</span>
+
+_PanelUS_._**load_A4**()
+
+Proceso que carga un archivo Excel Anexo 4 Nuevo.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas, hojas ocultas o las marcas temporales sin el formato adecuado. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales. Desde el Anexo 4 se obtienen la programación completa de salidas, la programación de salidas comerciales, y las capacidades de buses programados.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_A1b__</span>
+
+_PanelUS_._**load_A1b**()
+
+Proceso que carga un archivo Excel Anexo 1 Vigente.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_A3b__</span>
+
+_PanelUS_._**load_A3b**()
+
+Proceso que carga un archivo Excel Anexo 3 Vigente.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_A4b__</span>
+
+_PanelUS_._**load_A4b**()
+
+Proceso que carga un archivo Excel Anexo 4 Vigente.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales. Desde el Anexo 4 se obtienen la programación completa de salidas, la programación de salidas comerciales, y las capacidades de buses programados.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_cons__</span>
+
+_PanelUS_._**load_cons**()
+
+Proceso que carga un archivo Consolidado de Salidas.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__consolidado_loader__</span>
+
+_PanelUS_._**consolidado_loader**()
+
+Procesamiento del archivo Consolidado de Salidas, para generar estructuras de datos auxiliares para la distribución de salidas por media hora y el consolidado de frecuencias.
+
+El proceso es llamado por al interior de load_cons, así también cuando se realiza una carga del consolidado desde la memoria.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_conspar__</span>
+
+_PanelUS_._**load_conspar**()
+
+Proceso que carga un archivo Consolidado de Paradas.
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__load_base_cons__</span>
+
+_PanelUS_._**load_base_cons**()
+
+Proceso que carga un archivo Base de Consolidado (para obtener el orden de servicios del archivo Consolidado).
+
+El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__check_param_a3__</span>
+
+_PanelUS_._**check_param_a3**()
+
+Proceso que evalúa la consistencia interna del Anexo 3.
+
+El proceso considera:
+
+* Evaluar si las distancias están truncadas hasta dos decimales
+
+* Evaluar si las velocidades están truncadas hasta dos decimales
+
+* Evaluar si las marcas horarias en la columna MH no tienen segundos
+
+* Evaluar si la unidad de servicio de la columna es equivalente a la seleccionada en el programa
+
+* Evaluar si no existen servicios inyección en el archivo
+
+El proceso guarda en una variable los casos en los que la evaluación falla.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__check_param_a4__</span>
+
+_PanelUS_._**check_param_a4**()
+
+Proceso que evalúa la consistencia interna del Anexo 4.
+
+El proceso considera:
+
+* Evaluar si las marcas horarias en las columnas HORA_INICIO, PERIODO_INICIO, HORA_FIN, PERIODO_FIN y DURACION no tienen segundos
+
+* Evaluar si las distancias están truncadas hasta dos decimales
+
+* Evaluar si no existen datos incompletos (NaN)
+
+* Evaluar si la unidad de servicio de la columna es equivalente a la seleccionada en el programa
+
+El proceso guarda en una variable los casos en los que la evaluación falla.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__compare_a3v_a3n__</span>
+
+_PanelUS_._**compare_a3v_a3n**()
+
+Proceso que compara los parámetros de operación entre el Anexo 3 Vigente y el Anexo 3 Nuevo.
+
+La comparación de parámetros se realiza a nivel de Salidas, Velocidad, Distancia Base, Distancia Integrada, Indicador de Tiempo de Espera y Agrupación de MH.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__compare_a1_a4__</span>
+
+_PanelUS_._**compare_a1_a4**()
+
+Proceso que compara los horarios de operación según el Anexo 1, con las primera y última salidas del Anexo 4, por cada Servicio-Sentido-TipoDía.
+
+Para realizar el proceso se debe obtener las primera y última salida del Anexo 4 (a partir del proceso "genera_a1_from_a4") y realizar la comparación con el Anexo 1.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__genera_a1_from_a4__</span>
+
+_PanelUS_._**genera_a1_from_a4**()
+
+Proceso que genera una estructura como la hoja de Horarios de Operación del Anexo 1, identificando de forma correcta los casos en los que existe más de un tramo de operación (y por tanto más de un horario de inicio y más de un horario de fin). 
+
+Para realizar esto, toma como supuesto que __[no existe una diferencia menor a 3 horas entre el fin de un tramo y el inicio de otro]__, por lo que se centra en la identificación de gaps de tiempo superiores a 3 horas en los tiempos de salida de un tipo día para identificar más de un tramo, o si los inicios y fin se encuentran muy cercanos durante el espacio de la madrugada.
+
+El proceso guarda en una variable los casos en los que los horarios no coinciden.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__compare_a3_a4__</span>
+
+_PanelUS_._**compare_a3_a4**()
+
+Proceso que compara los parámetros de operación según el Anexo 3, con los parámetros que son posibles de estimar a partir de la programación de salidas del Anexo 4, por cada Servicio-Sentido-TipoDía.
+
+Para realizar el proceso se procesa el anexo 4, obteniendo las medidas o parámetros de operación según las características de la programación de salidas, consolidando la información por media hora, de forma de poder comparar directamente la información del Anexo 3.
+
+El proceso guarda en una variable los casos en los que los parámetros no coinciden.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__check_intervalos_a3_trusted__</span>
+
+_PanelUS_._**check_intervalos_a3_trusted**()
+
+Proceso que evalúa si los intervalos entre salidas programadas según el Anexo 4, cumplen con las restricciones de programación según el intervalo programado del Anexo 3 (tiempo/salidas).
+
+El proceso se genera de acuerdo con la regla señalada en el Manual de Programación US.
+
+El proceso guarda en una variable los casos en los que el intervalo programado en el Anexo 4 no cumple la regla del Manual.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__a3_newslds_w_base__</span>
+
+_PanelUS_._**a3_newslds_w_base**()
+
+Proceso que genera una estructura de datos con información del Anexo 3 a partir de la información de salidas del Consolidado, y los horarios de operación del Anexo 1. El proceso permite generar archivos de parámetros de operación desde el Consolidado, para los fines que se estimen necesarios.
+
+El proceso está basado en una rutina de asignación de salidas por media hora, y además contempla la generación óptima de una columna con las agrupaciones de media hora. Sin embargo, el proceso está diseñado para introducir las modificaciones de salidas y agrupaciones solo en los periodos en los que hubo cambios (de acuerdo con el Consolidado de Salidas).
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__genera_a4_from_a3__</span>
+
+_PanelUS_._**genera_a4_from_a3**()
+
+Proceso que genera una estructura de datos con información del  Anexo 4 (Tabla Horaria Simplificada) a partir de la información de parámetros de operación según el Anexo 3.
+
+El proceso está basado en una rutina de programación de salidas considerando las agrupaciones de MH y los horarios de operación según el Anexo 1.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__genera_a3_from_a4__</span>
+
+_PanelUS_._**genera_a3_from_a4**()
+
+Proceso que genera una estructura de datos con información del Anexo 3 a partir de la información de salidas programadas del Anexo 4.
+
+El proceso consolida por media hora la información programada (similar a lo que se procesa en "compare_a3_a4").
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__genera_cons_frec__</span>
+
+_PanelUS_._**genera_cons_frec**()
+
+Proceso que genera una estructura de datos con información de frecuencias por periodo (similar al Consolidado de Salidas).
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__calc_perfil_flota__</span>
+
+_PanelUS_._**calc_perfil_flota**()
+
+Proceso que genera una estructura de datos con información de flota operativa (cantidad de buses) por media hora en la unidad de servicio.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_periodo_us__</span>
+
+_PanelUS_._**cons_periodo_us**()
+
+Proceso que genera una estructura de datos con información consolidada de parámetros de operación por periodo.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__cons_mh_us__</span>
+
+_PanelUS_._**cons_mh_us**()
+
+Proceso que genera una estructura de datos con información consolidada de frecuencias por media hora.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__reagrupa_a3__</span>
+
+_PanelUS_._**reagrupa_a3**()
+
+Proceso que genera una nueva columna de agrupación de medias horas en el Anexo 3 Nuevo. 
+
+Este proceso se basa en una rutina de agrupación de medias horas con reglas que permitan una distribución suave de las salidas en cada media hora, y evitar una programación inequitativa de salidas.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__conteo_km__</span>
+
+_PanelUS_._**conteo_km**()
+
+Proceso que genera una nueva estructura de datos con el resumen de los kilómetros programados de la unidad, por tipo de día, a partir de cada Anexo 3 (Nuevo y Vigente) comparandolos entre sí.
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__valid_cons_w_intervs__</span>
+
+_PanelUS_._**valid_cons_w_intervs**()
+
+Proceso que genera una nueva estructura de datos con el cálculo de intervalos de salida programada, a partir de las salidas totales por periodo del Consolidado de Salidas.
+
+Esta herramienta permite alertar los casos en que la programación de la salidas tiene tal nivel que puede producir intervalos de salida fuera del estándar (máximo 30 minutos en servicios regulares).
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__generar_bases_analys_frec_cons__</span>
+
+_PanelUS_._**generar_bases_analys_frec_cons**()
+
+Proceso que genera una nueva estructura de datos analizando las frecuencias programadas promedio por periodo y SS, permitiendo su clasificación y revisión. 
+
+---
+
+#### <span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.__revisar_a4_buses_biportal__</span>
+
+_PanelUS_._**revisar_a4_buses_biportal**()
+
+Proceso que revisa que las salidas programadas en Anexo 4 en servicios que sirven en paradas de peurta izquierda, cuenten solo con buses de puerta izquierda programados.
+
+
