@@ -135,4 +135,4 @@ Función que gatilla la revisión comparativa entre parámetros de operación se
 
 También se presentan algunos botones para filtrar la información de la tabla por tipo de día, o parámetro de comparación.
 
-Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue.
+Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue
