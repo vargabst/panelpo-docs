@@ -1,807 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Back End (Proceso interno) - Panel PO - Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Back End (Proceso interno)";
+        var mkdocs_page_input_path = "archivo_core.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
 
-<!doctype html>
-<html lang="es" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../archivo_panel_po_us/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
-    
-    
-      
-        <title>Back End (Proceso interno) - Panel PO - Documentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
-      
+<body class="wy-body-for-nav" role="document">
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#back-end-proceso-interno" class="md-skip">
-          Saltar a contenido
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Panel PO - Documentation" class="md-header__button md-logo" aria-label="Panel PO - Documentation" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Panel PO - Documentation
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Back End (Proceso interno)
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Buscar">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Inicializando búsqueda
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Panel PO - Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
 </div>
-    
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Panel PO US
+      </div>
 
-      </a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Panel PO US</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Back End (Proceso interno)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#paquetes">Paquetes</a>
     </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-    
-  
-  Back End (Proceso interno)
-
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#funciones-nativas-en-archivo-corepy">Funciones nativas en Archivo 'core.py'</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#coreinstantessalidas">core.InstantesSalidas</a>
     </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../archivo_panel_po_us/" class="md-tabs__link">
-        
-  
-    
-  
-  Front End (Interfaz)
-
-      </a>
+    <li class="toctree-l3"><a class="reference internal" href="#coreredondear_al_minuto">core.redondear_al_minuto</a>
     </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../clase_PanelUS/" class="md-tabs__link">
-        
-  
-    
-  
-  Clase PanelUS
-
-      </a>
+    <li class="toctree-l3"><a class="reference internal" href="#coreint_codigo">core.int_codigo</a>
     </li>
-  
-
-      
+    <li class="toctree-l3"><a class="reference internal" href="#corenew_durac_periodo">core.new_durac_periodo</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreduracion_ok">core.duracion_ok</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coremelting_cons">core.melting_cons</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corereplace_char">core.replace_char</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coredifference_between_dt_times">core.difference_between_dt_times</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corefilechoose">core.fileChoose</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreformulacheck">core.formulaCheck</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corehiddensheetscheck">core.hiddenSheetsCheck</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreis_valid_time">core.is_valid_time</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coretimeformatcheck">core.timeFormatCheck</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corechunker">core.chunker</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corechunker_df">core.chunker_df</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreget_second_minimum">core.get_second_minimum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreconvertir_horario_dia_siguiente">core.convertir_horario_dia_siguiente</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corearreglar_horarios_inicio_fin">core.arreglar_horarios_inicio_fin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreget_first_and_last_exp">core.get_first_and_last_exp</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreget_limits_tramos">core.get_limits_tramos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corefilter_max_values_dict">core.filter_max_values_dict</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coredt_time_to_hours">core.dt_time_to_hours</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corecomp_durac_tolerance">core.comp_durac_tolerance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corecomp_iprog_tolerance">core.comp_iprog_tolerance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corehas_more_than_two_decimals">core.has_more_than_two_decimals</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corehas_seconds_greater_than_zero">core.has_seconds_greater_than_zero</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corecount_zeroes">core.count_zeroes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreasignacion">core.asignacion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coredt_time_to_dt_dt">core.dt_time_to_dt_dt</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreall_to_dt_time">core.all_to_dt_time</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coredelete_files_in_folder">core.delete_files_in_folder</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreperiodo_inicio">core.periodo_inicio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#corenew_periodo_inicio">core.new_periodo_inicio</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreaux_salidas">core.aux_salidas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#coreclasif_an_frec">core.clasif_an_frec</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#clase-panelus">Clase PanelUS</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#atributos-iniciales">Atributos iniciales</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusunidad">PanelUS.unidad</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo1">PanelUS.anexo1</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo1_name">PanelUS.anexo1_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo3">PanelUS.anexo3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo3_name">PanelUS.anexo3_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo3b">PanelUS.anexo3b</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo3b_name">PanelUS.anexo3b_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4">PanelUS.anexo4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4_name">PanelUS.anexo4_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4_solocomerc">PanelUS.anexo4_solocomerc</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4_capac">PanelUS.anexo4_capac</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4b">PanelUS.anexo4b</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4b_name">PanelUS.anexo4b_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4b_solocomerc">PanelUS.anexo4b_solocomerc</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4b_capac">PanelUS.anexo4b_capac</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsolidado">PanelUS.consolidado</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsolidado_name">PanelUS.consolidado_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsolidado_frec">PanelUS.consolidado_frec</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsolidado_par">PanelUS.consolidado_par</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsolidado_par_name">PanelUS.consolidado_par_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusbase_cons">PanelUS.base_cons</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusbase_cons_name">PanelUS.base_cons_name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusperiodos">PanelUS.periodos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusperiodos_data">PanelUS.periodos_data</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusgradiente">PanelUS.gradiente</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo3_w_inconsist">PanelUS.anexo3_w_inconsist</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo4_w_inconsist">PanelUS.anexo4_w_inconsist</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusvalidacion_a4_a1">PanelUS.validacion_a4_a1</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusvalidacion_a4_a3">PanelUS.validacion_a4_a3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusvalidacion_a4_a3_x_mha">PanelUS.validacion_a4_a3_x_mha</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusresult_comp_a3v_a3n">PanelUS.result_comp_a3v_a3n</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusvalidacion_a4_interv_mha_trusted">PanelUS.validacion_a4_interv_mha_trusted</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo1_new">PanelUS.anexo1_new</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_from_a4_final">PanelUS.a3_from_a4_final</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa4_from_a3">PanelUS.a4_from_a3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusanexo3_ns_w_base">PanelUS.anexo3_ns_w_base</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusperfil_flota">PanelUS.perfil_flota</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_frec">PanelUS.cons_a3_frec</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_cap">PanelUS.cons_a3_cap</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_sal">PanelUS.cons_a3_sal</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_vel">PanelUS.cons_a3_vel</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_dist">PanelUS.cons_a3_dist</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_dist_int">PanelUS.cons_a3_dist_int</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_a3_fmax">PanelUS.cons_a3_fmax</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_cons_mh">PanelUS.a3_cons_mh</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_lab_n">PanelUS.a3_lab_n</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_sab_n">PanelUS.a3_sab_n</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_dom_n">PanelUS.a3_dom_n</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_lab_v">PanelUS.a3_lab_v</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_sab_v">PanelUS.a3_sab_v</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_dom_v">PanelUS.a3_dom_v</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusdf_km">PanelUS.df_km</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_interv">PanelUS.cons_interv</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscuenta_ss">PanelUS.cuenta_ss</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusperc_ss_nivel_frec">PanelUS.perc_ss_nivel_frec</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusrevision_biportal">PanelUS.revision_biportal</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funciones-metodos">Funciones (métodos)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusreset">PanelUS.reset</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsulta_de_salidas">PanelUS.consulta_de_salidas</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsulta_de_gradiente">PanelUS.consulta_de_gradiente</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelussave_all_anexos">PanelUS.save_all_anexos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_all_anexos">PanelUS.load_all_anexos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusclear_all_anexos">PanelUS.clear_all_anexos</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_a1">PanelUS.load_A1</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_a3">PanelUS.load_A3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_a4">PanelUS.load_A4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_a1b">PanelUS.load_A1b</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_a3b">PanelUS.load_A3b</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_a4b">PanelUS.load_A4b</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_cons">PanelUS.load_cons</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconsolidado_loader">PanelUS.consolidado_loader</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_conspar">PanelUS.load_conspar</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusload_base_cons">PanelUS.load_base_cons</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscheck_param_a3">PanelUS.check_param_a3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscheck_param_a4">PanelUS.check_param_a4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscompare_a3v_a3n">PanelUS.compare_a3v_a3n</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscompare_a1_a4">PanelUS.compare_a1_a4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusgenera_a1_from_a4">PanelUS.genera_a1_from_a4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscompare_a3_a4">PanelUS.compare_a3_a4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscheck_intervalos_a3_trusted">PanelUS.check_intervalos_a3_trusted</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusa3_newslds_w_base">PanelUS.a3_newslds_w_base</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusgenera_a4_from_a3">PanelUS.genera_a4_from_a3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusgenera_a3_from_a4">PanelUS.genera_a3_from_a4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusgenera_cons_frec">PanelUS.genera_cons_frec</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscalc_perfil_flota">PanelUS.calc_perfil_flota</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_periodo_us">PanelUS.cons_periodo_us</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#paneluscons_mh_us">PanelUS.cons_mh_us</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusreagrupa_a3">PanelUS.reagrupa_a3</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusconteo_km">PanelUS.conteo_km</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusvalid_cons_w_intervs">PanelUS.valid_cons_w_intervs</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusgenerar_bases_analys_frec_cons">PanelUS.generar_bases_analys_frec_cons</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#panelusrevisar_a4_buses_biportal">PanelUS.revisar_a4_buses_biportal</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
     </ul>
-  </div>
-</nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Panel PO - Documentation" class="md-nav__button md-logo" aria-label="Panel PO - Documentation" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Panel PO - Documentation
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Panel PO US
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Back End (Proceso interno)
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Back End (Proceso interno)
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#paquetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Paquetes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#funciones-nativas-en-archivo-corepy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Funciones nativas en Archivo 'core.py'
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Funciones nativas en Archivo 'core.py'">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#coreinstantessalidas" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.InstantesSalidas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreredondear_al_minuto" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.redondear_al_minuto
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreint_codigo" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.int_codigo
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corenew_durac_periodo" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.new_durac_periodo
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreduracion_ok" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.duracion_ok
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coremelting_cons" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.melting_cons
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corereplace_char" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.replace_char
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coredifference_between_dt_times" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.difference_between_dt_times
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corefilechoose" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.fileChoose
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreformulacheck" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.formulaCheck
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corehiddensheetscheck" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.hiddenSheetsCheck
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreis_valid_time" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.is_valid_time
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coretimeformatcheck" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.timeFormatCheck
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corechunker" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.chunker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corechunker_df" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.chunker_df
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreget_second_minimum" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.get_second_minimum
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreconvertir_horario_dia_siguiente" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.convertir_horario_dia_siguiente
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corearreglar_horarios_inicio_fin" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.arreglar_horarios_inicio_fin
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreget_first_and_last_exp" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.get_first_and_last_exp
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreget_limits_tramos" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.get_limits_tramos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corefilter_max_values_dict" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.filter_max_values_dict
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coredt_time_to_hours" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.dt_time_to_hours
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corecomp_durac_tolerance" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.comp_durac_tolerance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corecomp_iprog_tolerance" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.comp_iprog_tolerance
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corehas_more_than_two_decimals" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.has_more_than_two_decimals
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corehas_seconds_greater_than_zero" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.has_seconds_greater_than_zero
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corecount_zeroes" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.count_zeroes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreasignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.asignacion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coredt_time_to_dt_dt" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.dt_time_to_dt_dt
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreall_to_dt_time" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.all_to_dt_time
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coredelete_files_in_folder" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.delete_files_in_folder
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreperiodo_inicio" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.periodo_inicio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#corenew_periodo_inicio" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.new_periodo_inicio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreaux_salidas" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.aux_salidas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#coreclasif_an_frec" class="md-nav__link">
-    <span class="md-ellipsis">
-      core.clasif_an_frec
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../archivo_panel_po_us/">Front End (Interfaz)</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../clase_PanelUS/">Clase PanelUS</a>
+                </li>
+              </ul>
+      </div>
+    </div>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clase-panelus" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clase PanelUS
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Clase PanelUS">
-      <ul class="md-nav__list">
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Panel PO - Documentation</a>
         
-          <li class="md-nav__item">
-  <a href="#atributos-iniciales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Atributos iniciales
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Back End (Proceso interno)</li>
+    <li class="wy-breadcrumbs-aside">
     </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archivo_panel_po_us/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Front End (Interfaz)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../clase_PanelUS/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Clase PanelUS
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-<h1 id="back-end-proceso-interno">Back End (Proceso interno)</h1>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="back-end-proceso-interno">Back End (Proceso interno)</h1>
 <h2 id="paquetes">Paquetes</h2>
 <ul>
 <li><code>pandas</code> - Procesamiento de datos estructurados.</li>
@@ -1117,91 +666,493 @@ Se puede indicar como segundo argumento una cantidad decimal de minutos. (ej: 30
 </ul>
 <h2 id="clase-panelus">Clase PanelUS</h2>
 <h3 id="atributos-iniciales">Atributos iniciales</h3>
+<h4 id="panelusunidad"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>unidad</strong> </span></h4>
+<p>(type: <em>str</em>, default = '0')</p>
+<p>Variable que guarda el valor de la unidad de servicio seleccionada por usuario para generar revisiones específicas en Panel.</p>
+<hr />
+<h4 id="panelusanexo1"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo1</strong> </span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información completa del Anexo 1.</p>
+<hr />
+<h4 id="panelusanexo1_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo1_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 1 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo3</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información completa del Anexo 3 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo3_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo3_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 3 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo3b"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo3b</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información completa del Anexo 3 Vigente.</p>
+<hr />
+<h4 id="panelusanexo3b_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo3b_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 3 Vigente.</p>
+<hr />
+<h4 id="panelusanexo4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información completa del Anexo 4 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo4_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 4 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo4_solocomerc"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4_solocomerc</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información de salidas comerciales (C01) del Anexo 4 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo4_capac"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4_capac</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información de capacidades de buses del Anexo 4 Nuevo.</p>
+<hr />
+<h4 id="panelusanexo4b"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4b</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información completa del Anexo 4 Vigente.</p>
+<hr />
+<h4 id="panelusanexo4b_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4b_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Anexo 4 Vigente.</p>
+<hr />
+<h4 id="panelusanexo4b_solocomerc"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4b_solocomerc</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información de salidas comerciales (C01) del Anexo 4 Vigente.</p>
+<hr />
+<h4 id="panelusanexo4b_capac"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4b_capac</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información de capacidades de buses del Anexo 4 Vigente.</p>
+<hr />
+<h4 id="panelusconsolidado"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consolidado</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información del Consolidado de Salidas.</p>
+<hr />
+<h4 id="panelusconsolidado_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consolidado_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Consolidado de Salidas.</p>
+<hr />
+<h4 id="panelusconsolidado_frec"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consolidado_frec</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con información de frecuencias, calculadas desde el Consolidado de Salidas.</p>
+<hr />
+<h4 id="panelusconsolidado_par"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consolidado_par</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información del Registro Consolidado de Paradas.</p>
+<hr />
+<h4 id="panelusconsolidado_par_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consolidado_par_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información del Registro Consolidado de Paradas.</p>
+<hr />
+<h4 id="panelusbase_cons"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>base_cons</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con la información base de Servicios-Sentido en el orden preestablecido histórico de los Consolidados.</p>
+<hr />
+<h4 id="panelusbase_cons_name"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>base_cons_name</strong></span></h4>
+<p>(type: <em>str</em>, default = 'No cargado')</p>
+<p>Variable que guarda el nombre del archivo Excel que contiene la información base de Servicios-Sentido en el orden preestablecido histórico de los Consolidados.</p>
+<hr />
+<h4 id="panelusperiodos"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>periodos</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = Información de Periodos*)</p>
+<p>Variable que guarda la estructura del DataFrame con información de periodos según tipo día, media hora, duración de cada periodo y otras columnas que auxilian la tarea de distribución de salidas asignadas por periodo.</p>
+<hr />
+<h4 id="panelusperiodos_data"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>periodos_data</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = Información de Periodos*)</p>
+<p>Variable que guarda la estructura del DataFrame con información de periodos según tipo día y media hora. Guarda la estructura original de la tabla anterior, sin las columnas auxiliares del proceso de distribución de salidas asignadas por periodo</p>
+<hr />
+<h4 id="panelusgradiente"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>gradiente</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de tendencias en la asignación de salidas por periodo en el Consolidado. Por ejemplo, si en el siguiente periodo aumentan o disminuyen las salidas. </p>
+<hr />
+<h4 id="panelusanexo3_w_inconsist"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo3_w_inconsist</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante del análisis de consistencia del Anexo 3 Nuevo. </p>
+<hr />
+<h4 id="panelusanexo4_w_inconsist"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo4_w_inconsist</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante del análisis de consistencia del Anexo 4 Nuevo. </p>
+<hr />
+<h4 id="panelusvalidacion_a4_a1"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>validacion_a4_a1</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante de la comparación de horarios de salida (A4) y operación (A1).</p>
+<hr />
+<h4 id="panelusvalidacion_a4_a3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>validacion_a4_a3</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante de la comparación de parámetros de operación definidos en Anexo 3 y Anexo 4.</p>
+<hr />
+<h4 id="panelusvalidacion_a4_a3_x_mha"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>validacion_a4_a3_x_mha</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante de la comparación de parámetros de operación definidos en Anexo 3 y Anexo 4, por media hora agrupada según Anexo 3.</p>
+<hr />
+<h4 id="panelusresult_comp_a3v_a3n"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>result_comp_a3v_a3n</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante de la comparación de parámetros de operación definidos en Anexo 3 Nuevo y Anexo 3 Vigente.</p>
+<hr />
+<h4 id="panelusvalidacion_a4_interv_mha_trusted"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>validacion_a4_interv_mha_trusted</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame resultante de la validación de intervalos programados de salidas en el Anexo 4, considerando las agrupaciones del Anexo 3.</p>
+<hr />
+<h4 id="panelusanexo1_new"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo1_new</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con la información formateada del Anexo 1, construido a partir del Anexo 4.</p>
+<hr />
+<h4 id="panelusa3_from_a4_final"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_from_a4_final</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con la información formateada del Anexo 3, construido a partir del Anexo 4.</p>
+<hr />
+<h4 id="panelusa4_from_a3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a4_from_a3</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con la información formateada del Anexo 4, construido a partir del Anexo 3.</p>
+<hr />
+<h4 id="panelusanexo3_ns_w_base"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>anexo3_ns_w_base</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información formateada del Anexo 3, construido a partir del Consolidado de Salidas (distribuidas).</p>
+<hr />
+<h4 id="panelusperfil_flota"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>perfil_flota</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de cantidad de flota operando por cada media hora en una unidad.</p>
+<hr />
+<h4 id="paneluscons_a3_frec"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_frec</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de frecuencias consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="paneluscons_a3_cap"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_cap</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de capacidades consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="paneluscons_a3_sal"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_sal</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de salidas consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="paneluscons_a3_vel"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_vel</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de velocidades promedio consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="paneluscons_a3_dist"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_dist</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de distancias totales consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="paneluscons_a3_dist_int"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_dist_int</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de distancias totales consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="paneluscons_a3_fmax"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_a3_fmax</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de flota máxima consolidada por periodo, para preparar el archivo Consolidado de Parámetros.</p>
+<hr />
+<h4 id="panelusa3_cons_mh"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_cons_mh</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información consolidada de frecuencias por media hora.</p>
+<hr />
+<h4 id="panelusa3_lab_n"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_lab_n</strong></span></h4>
+<p>(type: <em>bool</em>, default = False)</p>
+<p>Variable booleana que identifica si hay días laborales en el Anexo 3 Nuevo.</p>
+<hr />
+<h4 id="panelusa3_sab_n"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_sab_n</strong></span></h4>
+<p>(type: <em>bool</em>, default = False)</p>
+<p>Variable booleana que identifica si hay días sábado en el Anexo 3 Nuevo.</p>
+<hr />
+<h4 id="panelusa3_dom_n"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_dom_n</strong></span></h4>
+<p>(type: <em>bool</em>, default = False)</p>
+<p>Variable booleana que identifica si hay días domingo en el Anexo 3 Nuevo.</p>
+<hr />
+<h4 id="panelusa3_lab_v"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_lab_v</strong></span></h4>
+<p>(type: <em>bool</em>, default = False)</p>
+<p>Variable booleana que identifica si hay días laborales en el Anexo 3 Vigente.</p>
+<hr />
+<h4 id="panelusa3_sab_v"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_sab_v</strong></span></h4>
+<p>(type: <em>bool</em>, default = False)</p>
+<p>Variable booleana que identifica si hay días sábado en el Anexo 3 Vigente.</p>
+<hr />
+<h4 id="panelusa3_dom_v"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_dom_v</strong></span></h4>
+<p>(type: <em>bool</em>, default = False)</p>
+<p>Variable booleana que identifica si hay días domingo en el Anexo 3 Vigente.</p>
+<hr />
+<h4 id="panelusdf_km"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>df_km</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con información de kilómetros totales por tipo día.</p>
+<hr />
+<h4 id="paneluscons_interv"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_interv</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con información de intervalo promedio de salidas por periodo (formato Consolidado).</p>
+<hr />
+<h4 id="paneluscuenta_ss"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cuenta_ss</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información de cantidad de Servicios-Sentido por unidad y por periodo que se agregan por cada categoría de frecuencias.</p>
+<hr />
+<h4 id="panelusperc_ss_nivel_frec"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>perc_ss_nivel_frec</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = None)</p>
+<p>Variable que guarda la estructura del DataFrame con información final de proporciones (porcentaje) de Servicios-Sentido por unidad y por periodo que se agregan por cada categoría de frecuencias.</p>
+<hr />
+<h4 id="panelusrevision_biportal"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>revision_biportal</strong></span></h4>
+<p>(type: <em>pandas.DataFrame</em>, default = pandas.DataFrame())</p>
+<p>Variable que guarda la estructura del DataFrame con información de salidas programadas en Anexo 4 asignadas erróneamente a buses que no pueden operar en servicios que atienden paraderos de puerta izquierda.</p>
+<hr />
+<h3 id="funciones-metodos">Funciones (métodos)</h3>
+<h4 id="panelusreset"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>reset</strong></span></h4>
+<p><em>PanelUS</em>.<strong>reset</strong>()</p>
+<p>Reinicia todos los atributos iniciales del Panel.</p>
+<hr />
+<h4 id="panelusconsulta_de_salidas"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consulta_de_salidas</strong></span></h4>
+<p><em>PanelUS</em>.<em><strong>consulta_de_salidas</strong>(servicio: _str</em>, sentido: <em>str</em>, periodo: <em>str</em>)</p>
+<p>Lee el Consolidado de Salidas y retorna el número de salidas efectuadas durante el periodo según el consolidado. Si no encuentra el Servicio-Sentido-Periodo retorna un valor NaN.</p>
+<p>Parámetros</p>
 <ul>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.cons_un_chose_gate</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
-<li><code>PanelUS.unidad</code></li>
+<li><code>servicio</code>: Identificador del servicio (Código TS) </li>
+<li><code>sentido</code>: Identificador del sentido ("Ida", "Ret")</li>
+<li><code>periodo</code>: Identificador del periodo (Abreviatura)</li>
 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+<hr />
+<h4 id="panelusconsulta_de_gradiente"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consulta_de_gradiente</strong></span></h4>
+<p><em>PanelUS</em>.<em><strong>consulta_de_gradiente</strong>(servicio: _str</em>, sentido: <em>str</em>, periodo: <em>str</em>)</p>
+<p>Lee el Consolidado de Salidas y retorna el valor del gradiente en el periodo según el consolidado-gradiente. Si no encuentra el Servicio-Sentido-Periodo retorna un valor NaN.</p>
+<p>Parámetros</p>
+<ul>
+<li><code>servicio</code>: Identificador del servicio (Código TS) </li>
+<li><code>sentido</code>: Identificador del sentido ("Ida", "Ret")</li>
+<li><code>periodo</code>: Identificador del periodo (Abreviatura)</li>
+</ul>
+<hr />
+<h4 id="panelussave_all_anexos"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>save_all_anexos</strong></span></h4>
+<p><em>PanelUS</em>._<strong>save_all_anexos</strong>()</p>
+<p>Guarda todos los archivos cargados en el Panel, en formato encriptado, para permitir su recarga al reiniciar el programa.</p>
+<hr />
+<h4 id="panelusload_all_anexos"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_all_anexos</strong></span></h4>
+<p><em>PanelUS</em>.<em><strong>load_all_anexos</strong>(files_in_memory: _list</em>)</p>
+<p>Carga todos los archivos guardados en la memoria del Panel.</p>
+<p>Parámetros</p>
+<ul>
+<li><code>files_in_memory</code>: Lista con los nombres de los archivos guardados en la memoria del panel. </li>
+</ul>
+<hr />
+<h4 id="panelusclear_all_anexos"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>clear_all_anexos</strong></span></h4>
+<p><em>PanelUS</em>.<em><strong>clear_all_anexos</strong>(path</em>: <em>str</em>)</p>
+<p>Borra todos los archivos guardados en la memoria del Panel.</p>
+<p>Parámetros</p>
+<ul>
+<li><code>path_</code>: Nombre de la dirección de la carpeta de memoria. </li>
+</ul>
+<hr />
+<h4 id="panelusload_a1"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_A1</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_A1</strong>()</p>
+<p>Proceso que carga un archivo Excel Anexo 1 Nuevo.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="panelusload_a3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_A3</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_A3</strong>()</p>
+<p>Proceso que carga un archivo Excel Anexo 3 Nuevo.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="panelusload_a4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_A4</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_A4</strong>()</p>
+<p>Proceso que carga un archivo Excel Anexo 4 Nuevo.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas, hojas ocultas o las marcas temporales sin el formato adecuado. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales. Desde el Anexo 4 se obtienen la programación completa de salidas, la programación de salidas comerciales, y las capacidades de buses programados.</p>
+<hr />
+<h4 id="panelusload_a1b"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_A1b</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_A1b</strong>()</p>
+<p>Proceso que carga un archivo Excel Anexo 1 Vigente.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="panelusload_a3b"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_A3b</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_A3b</strong>()</p>
+<p>Proceso que carga un archivo Excel Anexo 3 Vigente.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="panelusload_a4b"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_A4b</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_A4b</strong>()</p>
+<p>Proceso que carga un archivo Excel Anexo 4 Vigente.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales. Desde el Anexo 4 se obtienen la programación completa de salidas, la programación de salidas comerciales, y las capacidades de buses programados.</p>
+<hr />
+<h4 id="panelusload_cons"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_cons</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_cons</strong>()</p>
+<p>Proceso que carga un archivo Consolidado de Salidas.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="panelusconsolidado_loader"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>consolidado_loader</strong></span></h4>
+<p><em>PanelUS</em>._<strong>consolidado_loader</strong>()</p>
+<p>Procesamiento del archivo Consolidado de Salidas, para generar estructuras de datos auxiliares para la distribución de salidas por media hora y el consolidado de frecuencias.</p>
+<p>El proceso es llamado por al interior de load_cons, así también cuando se realiza una carga del consolidado desde la memoria.</p>
+<hr />
+<h4 id="panelusload_conspar"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_conspar</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_conspar</strong>()</p>
+<p>Proceso que carga un archivo Consolidado de Paradas.</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="panelusload_base_cons"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>load_base_cons</strong></span></h4>
+<p><em>PanelUS</em>._<strong>load_base_cons</strong>()</p>
+<p>Proceso que carga un archivo Base de Consolidado (para obtener el orden de servicios del archivo Consolidado).</p>
+<p>El proceso es llamado por una función de la interfaz, y permite la interacción en los casos que no se seleccione ningún archivo, así también gatilla variables booleanas para alertar cuando el archivo tiene fórmulas u hojas ocultas. También está diseñado para renombrar las columnas, y así no tener conflictos por alteraciones o typos en los archivos originales.</p>
+<hr />
+<h4 id="paneluscheck_param_a3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>check_param_a3</strong></span></h4>
+<p><em>PanelUS</em>._<strong>check_param_a3</strong>()</p>
+<p>Proceso que evalúa la consistencia interna del Anexo 3.</p>
+<p>El proceso considera:</p>
+<ul>
+<li>
+<p>Evaluar si las distancias están truncadas hasta dos decimales</p>
+</li>
+<li>
+<p>Evaluar si las velocidades están truncadas hasta dos decimales</p>
+</li>
+<li>
+<p>Evaluar si las marcas horarias en la columna MH no tienen segundos</p>
+</li>
+<li>
+<p>Evaluar si la unidad de servicio de la columna es equivalente a la seleccionada en el programa</p>
+</li>
+<li>
+<p>Evaluar si no existen servicios inyección en el archivo</p>
+</li>
+</ul>
+<p>El proceso guarda en una variable los casos en los que la evaluación falla.</p>
+<hr />
+<h4 id="paneluscheck_param_a4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>check_param_a4</strong></span></h4>
+<p><em>PanelUS</em>._<strong>check_param_a4</strong>()</p>
+<p>Proceso que evalúa la consistencia interna del Anexo 4.</p>
+<p>El proceso considera:</p>
+<ul>
+<li>
+<p>Evaluar si las marcas horarias en las columnas HORA_INICIO, PERIODO_INICIO, HORA_FIN, PERIODO_FIN y DURACION no tienen segundos</p>
+</li>
+<li>
+<p>Evaluar si las distancias están truncadas hasta dos decimales</p>
+</li>
+<li>
+<p>Evaluar si no existen datos incompletos (NaN)</p>
+</li>
+<li>
+<p>Evaluar si la unidad de servicio de la columna es equivalente a la seleccionada en el programa</p>
+</li>
+</ul>
+<p>El proceso guarda en una variable los casos en los que la evaluación falla.</p>
+<hr />
+<h4 id="paneluscompare_a3v_a3n"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>compare_a3v_a3n</strong></span></h4>
+<p><em>PanelUS</em>._<strong>compare_a3v_a3n</strong>()</p>
+<p>Proceso que compara los parámetros de operación entre el Anexo 3 Vigente y el Anexo 3 Nuevo.</p>
+<p>La comparación de parámetros se realiza a nivel de Salidas, Velocidad, Distancia Base, Distancia Integrada, Indicador de Tiempo de Espera y Agrupación de MH.</p>
+<hr />
+<h4 id="paneluscompare_a1_a4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>compare_a1_a4</strong></span></h4>
+<p><em>PanelUS</em>._<strong>compare_a1_a4</strong>()</p>
+<p>Proceso que compara los horarios de operación según el Anexo 1, con las primera y última salidas del Anexo 4, por cada Servicio-Sentido-TipoDía.</p>
+<p>Para realizar el proceso se debe obtener las primera y última salida del Anexo 4 (a partir del proceso "genera_a1_from_a4") y realizar la comparación con el Anexo 1.</p>
+<hr />
+<h4 id="panelusgenera_a1_from_a4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>genera_a1_from_a4</strong></span></h4>
+<p><em>PanelUS</em>._<strong>genera_a1_from_a4</strong>()</p>
+<p>Proceso que genera una estructura como la hoja de Horarios de Operación del Anexo 1, identificando de forma correcta los casos en los que existe más de un tramo de operación (y por tanto más de un horario de inicio y más de un horario de fin). </p>
+<p>Para realizar esto, toma como supuesto que <strong>[no existe una diferencia menor a 3 horas entre el fin de un tramo y el inicio de otro]</strong>, por lo que se centra en la identificación de gaps de tiempo superiores a 3 horas en los tiempos de salida de un tipo día para identificar más de un tramo, o si los inicios y fin se encuentran muy cercanos durante el espacio de la madrugada.</p>
+<p>El proceso guarda en una variable los casos en los que los horarios no coinciden.</p>
+<hr />
+<h4 id="paneluscompare_a3_a4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>compare_a3_a4</strong></span></h4>
+<p><em>PanelUS</em>._<strong>compare_a3_a4</strong>()</p>
+<p>Proceso que compara los parámetros de operación según el Anexo 3, con los parámetros que son posibles de estimar a partir de la programación de salidas del Anexo 4, por cada Servicio-Sentido-TipoDía.</p>
+<p>Para realizar el proceso se procesa el anexo 4, obteniendo las medidas o parámetros de operación según las características de la programación de salidas, consolidando la información por media hora, de forma de poder comparar directamente la información del Anexo 3.</p>
+<p>El proceso guarda en una variable los casos en los que los parámetros no coinciden.</p>
+<hr />
+<h4 id="paneluscheck_intervalos_a3_trusted"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>check_intervalos_a3_trusted</strong></span></h4>
+<p><em>PanelUS</em>._<strong>check_intervalos_a3_trusted</strong>()</p>
+<p>Proceso que evalúa si los intervalos entre salidas programadas según el Anexo 4, cumplen con las restricciones de programación según el intervalo programado del Anexo 3 (tiempo/salidas).</p>
+<p>El proceso se genera de acuerdo con la regla señalada en el Manual de Programación US.</p>
+<p>El proceso guarda en una variable los casos en los que el intervalo programado en el Anexo 4 no cumple la regla del Manual.</p>
+<hr />
+<h4 id="panelusa3_newslds_w_base"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>a3_newslds_w_base</strong></span></h4>
+<p><em>PanelUS</em>._<strong>a3_newslds_w_base</strong>()</p>
+<p>Proceso que genera una estructura de datos con información del Anexo 3 a partir de la información de salidas del Consolidado, y los horarios de operación del Anexo 1. El proceso permite generar archivos de parámetros de operación desde el Consolidado, para los fines que se estimen necesarios.</p>
+<p>El proceso está basado en una rutina de asignación de salidas por media hora, y además contempla la generación óptima de una columna con las agrupaciones de media hora. Sin embargo, el proceso está diseñado para introducir las modificaciones de salidas y agrupaciones solo en los periodos en los que hubo cambios (de acuerdo con el Consolidado de Salidas).</p>
+<hr />
+<h4 id="panelusgenera_a4_from_a3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>genera_a4_from_a3</strong></span></h4>
+<p><em>PanelUS</em>._<strong>genera_a4_from_a3</strong>()</p>
+<p>Proceso que genera una estructura de datos con información del  Anexo 4 (Tabla Horaria Simplificada) a partir de la información de parámetros de operación según el Anexo 3.</p>
+<p>El proceso está basado en una rutina de programación de salidas considerando las agrupaciones de MH y los horarios de operación según el Anexo 1.</p>
+<hr />
+<h4 id="panelusgenera_a3_from_a4"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>genera_a3_from_a4</strong></span></h4>
+<p><em>PanelUS</em>._<strong>genera_a3_from_a4</strong>()</p>
+<p>Proceso que genera una estructura de datos con información del Anexo 3 a partir de la información de salidas programadas del Anexo 4.</p>
+<p>El proceso consolida por media hora la información programada (similar a lo que se procesa en "compare_a3_a4").</p>
+<hr />
+<h4 id="panelusgenera_cons_frec"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>genera_cons_frec</strong></span></h4>
+<p><em>PanelUS</em>._<strong>genera_cons_frec</strong>()</p>
+<p>Proceso que genera una estructura de datos con información de frecuencias por periodo (similar al Consolidado de Salidas).</p>
+<hr />
+<h4 id="paneluscalc_perfil_flota"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>calc_perfil_flota</strong></span></h4>
+<p><em>PanelUS</em>._<strong>calc_perfil_flota</strong>()</p>
+<p>Proceso que genera una estructura de datos con información de flota operativa (cantidad de buses) por media hora en la unidad de servicio.</p>
+<hr />
+<h4 id="paneluscons_periodo_us"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_periodo_us</strong></span></h4>
+<p><em>PanelUS</em>._<strong>cons_periodo_us</strong>()</p>
+<p>Proceso que genera una estructura de datos con información consolidada de parámetros de operación por periodo.</p>
+<hr />
+<h4 id="paneluscons_mh_us"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>cons_mh_us</strong></span></h4>
+<p><em>PanelUS</em>._<strong>cons_mh_us</strong>()</p>
+<p>Proceso que genera una estructura de datos con información consolidada de frecuencias por media hora.</p>
+<hr />
+<h4 id="panelusreagrupa_a3"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>reagrupa_a3</strong></span></h4>
+<p><em>PanelUS</em>._<strong>reagrupa_a3</strong>()</p>
+<p>Proceso que genera una nueva columna de agrupación de medias horas en el Anexo 3 Nuevo. </p>
+<p>Este proceso se basa en una rutina de agrupación de medias horas con reglas que permitan una distribución suave de las salidas en cada media hora, y evitar una programación inequitativa de salidas.</p>
+<hr />
+<h4 id="panelusconteo_km"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>conteo_km</strong></span></h4>
+<p><em>PanelUS</em>._<strong>conteo_km</strong>()</p>
+<p>Proceso que genera una nueva estructura de datos con el resumen de los kilómetros programados de la unidad, por tipo de día, a partir de cada Anexo 3 (Nuevo y Vigente) comparandolos entre sí.</p>
+<hr />
+<h4 id="panelusvalid_cons_w_intervs"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>valid_cons_w_intervs</strong></span></h4>
+<p><em>PanelUS</em>._<strong>valid_cons_w_intervs</strong>()</p>
+<p>Proceso que genera una nueva estructura de datos con el cálculo de intervalos de salida programada, a partir de las salidas totales por periodo del Consolidado de Salidas.</p>
+<p>Esta herramienta permite alertar los casos en que la programación de la salidas tiene tal nivel que puede producir intervalos de salida fuera del estándar (máximo 30 minutos en servicios regulares).</p>
+<hr />
+<h4 id="panelusgenerar_bases_analys_frec_cons"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>generar_bases_analys_frec_cons</strong></span></h4>
+<p><em>PanelUS</em>._<strong>generar_bases_analys_frec_cons</strong>()</p>
+<p>Proceso que genera una nueva estructura de datos analizando las frecuencias programadas promedio por periodo y SS, permitiendo su clasificación y revisión. </p>
+<hr />
+<h4 id="panelusrevisar_a4_buses_biportal"><span style="font-size:0.7em;">PanelUS</span><span style="font-size:1.2em;">.<strong>revisar_a4_buses_biportal</strong></span></h4>
+<p><em>PanelUS</em>._<strong>revisar_a4_buses_biportal</strong>()</p>
+<p>Proceso que revisa que las salidas programadas en Anexo 4 en servicios que sirven en paradas de peurta izquierda, cuenten solo con buses de puerta izquierda programados.</p>
+              
             </div>
-          
-          
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Panel PO US"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../archivo_panel_po_us/" class="btn btn-neutral float-right" title="Front End (Interfaz)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Volver al principio
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
   </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
-      
+      <span><a href="../archivo_panel_po_us/" style="color: #fcfcfc">Next &raquo;</a></span>
     
-  </body>
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
 </html>
