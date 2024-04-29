@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Front End (Interfaz) - Panel PO - Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Front End (Interfaz)";
+        var mkdocs_page_input_path = "archivo_panel_po_us.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Panel PO - Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Panel PO US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../archivo_core/">Back End (Proceso interno)</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Front End (Interfaz)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#paquetes">Paquetes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#funciones-nativas-en-archivo-panel_po_uspy">Funciones nativas en Archivo 'panel_po_us.py'</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uspop_up_savior">panel_po_us.pop_up_savior</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uspop_up_savior_png">panel_po_us.pop_up_savior_png</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_usfilter_df_show">panel_po_us.filter_df_show</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_usfilter_df_show_2_tipodia">panel_po_us.filter_df_show_2_tipodia</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uschange_df_view">panel_po_us.change_df_view</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uscheck_params_a3">panel_po_us.check_params_a3</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uscheck_params_a4">panel_po_us.check_params_a4</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uscomp_a3v_a3n_panel">panel_po_us.comp_a3v_a3n_panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uscomp_time_a1_a4">panel_po_us.comp_time_a1_a4</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#panel_po_uscomp_param_a3_a4">panel_po_us.comp_param_a3_a4</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../clase_PanelUS/">Clase PanelUS</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Panel PO - Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Front End (Interfaz)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="front-end-interfaz">Front End (Interfaz)</h1>
+<h2 id="paquetes">Paquetes</h2>
+<ul>
+<li><code>tkinter</code> - Generación de interfaces.</li>
+<li><code>PIL (pillow)</code> - Gestión de imágenes.</li>
+<li><code>threading</code> - Capacidad de ejecución de acciones en paralelo.</li>
+<li><code>openpyxl</code> - Tratamiento de archivos Excel.</li>
+<li><code>xlsxwriter</code> - Generador de archivos Excel.</li>
+<li><code>tooltip</code> - Creación y visualización de mensajes 'on-cursor'.</li>
+<li><code>pandastable</code> - Creación y visualización de Pandas DataFrames en tkinter.</li>
+<li><code>warnings</code> - Gestión de mensajes de advertencia.</li>
+<li><code>shutil</code> - Tratamiento de archivos Excel.</li>
+<li><code>matplotlib</code> - Generación de gráficos 2D.</li>
+<li><code>core</code> - Funcionamiento interno de Panel PO.</li>
+</ul>
+<h2 id="funciones-nativas-en-archivo-panel_po_uspy">Funciones nativas en Archivo 'panel_po_us.py'</h2>
+<h3 id="panel_po_uspop_up_savior"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>pop_up_savior</strong></span></h3>
+<p>panel_po_us.<em><strong>pop_up_savior</strong>(df: _pandas.DataFrame</em>, tipo_archivo: <em>str</em>)</p>
+<p>Función que permite exportar un DataFrame en un archivo Excel, con un nombre particular, unidad revisada, fecha y hora de revisión.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>df</code>: DataFrame de Pandas a exportar</li>
+<li><code>tipo_archivo</code>: Nombre que se le desea otorgar al archivo Excel</li>
+</ul>
+<hr />
+<h3 id="panel_po_uspop_up_savior_png"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>pop_up_savior_png</strong></span></h3>
+<p>panel_po_us.<em><strong>pop_up_savior_png</strong>(figure: _matplotlib.Figure</em>, tipo_archivo: <em>str</em>)</p>
+<p>Función que permite exportar un gráfico en un archivo PNG, con un nombre particular, unidad revisada, fecha y hora de revisión.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>figure</code>: Figura de Matplotlib a exportar</li>
+<li><code>tipo_archivo</code>: Nombre que se le desea otorgar al archivo</li>
+</ul>
+<hr />
+<h3 id="panel_po_usfilter_df_show"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>filter_df_show</strong></span></h3>
+<p>panel_po_us.<em><strong>filter_df_show</strong>(table: _pandastable.Table</em>, df: <em>pandas.DataFrame</em>, n_col: <em>str</em>)</p>
+<p>Función que se utiliza en ventanas emergentes; permite filtrar las tablas, mostrando las filas con problemas según la columna que se utilice para el filtro.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>table</code>: Objeto Table asociado a un DataFrame</li>
+<li><code>df</code>: DataFrame de Pandas</li>
+<li><code>n_col</code>: Nombre de la columna a filtrar</li>
+</ul>
+<hr />
+<h3 id="panel_po_usfilter_df_show_2_tipodia"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>filter_df_show_2_tipodia</strong></span></h3>
+<p>panel_po_us.<em><strong>filter_df_show_2_tipodia</strong>(table: _pandastable.Table</em>, df: <em>pandas.DataFrame</em>, td: <em>str</em>)</p>
+<p>Función que se utiliza en ventanas emergentes; permite filtrar las tablas por tipo de día.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>table</code>: Objeto Table asociado a un DataFrame</li>
+<li><code>df</code>: DataFrame de Pandas</li>
+<li><code>td</code>: Nombre del tipo de día que se desea filtrar</li>
+</ul>
+<hr />
+<h3 id="panel_po_uschange_df_view"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>change_df_view</strong></span></h3>
+<p>panel_po_us.<em><strong>change_df_view</strong>(table: _pandastable.Table</em>, df: <em>pandas.DataFrame</em>, mha: <em>bool</em>)</p>
+<p>Función que se utiliza en ventanas emergentes de comparación de Anexo 3 y Anexo 4; permite cambiar la vista y botones de la vista para observar según MH o Agrupación de MH.</p>
+<p>Parámetros:</p>
+<ul>
+<li><code>table</code>: Objeto Table asociado a un DataFrame</li>
+<li><code>df</code>: DataFrame de Pandas</li>
+<li><code>mha</code>: Variable booleana que permite el cambio de visa en botones de filtro de la ventana emergente</li>
+</ul>
+<hr />
+<h3 id="panel_po_uscheck_params_a3"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>check_params_a3</strong></span></h3>
+<p>panel_po_us._<strong>check_params_a3</strong>()</p>
+<p>Función que gatilla la revisión de consistencia interna en parámetros del Anexo 3. La función llama al proceso interno (siempre que haya un Anexo 3 Nuevo cargado) y luego genera una ventana emergente con dos posibles resultados: un mensaje de que el archivo es consistente, o una tabla con las filas del Anexo 3 que presentan inconsistencia. </p>
+<p>Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue.</p>
+<hr />
+<h3 id="panel_po_uscheck_params_a4"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>check_params_a4</strong></span></h3>
+<p>panel_po_us._<strong>check_params_a4</strong>()</p>
+<p>Función que gatilla la revisión de consistencia interna en parámetros del Anexo 4. La función llama al proceso interno (siempre que haya un Anexo 4 Nuevo cargado) y luego genera una ventana emergente con dos posibles resultados: un mensaje de que el archivo es consistente, o una tabla con las filas del Anexo 4 que presentan inconsistencia. </p>
+<p>Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue.</p>
+<hr />
+<h3 id="panel_po_uscomp_a3v_a3n_panel"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>comp_a3v_a3n_panel</strong></span></h3>
+<p>panel_po_us._<strong>comp_a3v_a3n_panel</strong>()</p>
+<p>Función que gatilla la revisión comparativa entre parámetros del Anexo 3 Nuevo y el Vigente. La función llama al proceso interno (siempre que haya un Anexo 3 Nuevo cargado y un Anexo 3 Vigente cargado) y luego genera una ventana emergente con dos posibles resultados: un mensaje de que ambos archivos son consistentes, o una tabla comparativa con los parámetros que no coinciden. </p>
+<p>También se presentan algunos botones para filtrar la información de la tabla por tipo de día, o parámetro de comparación.</p>
+<p>Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue.</p>
+<hr />
+<h3 id="panel_po_uscomp_time_a1_a4"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>comp_time_a1_a4</strong></span></h3>
+<p>panel_po_us._<strong>comp_time_a1_a4</strong>()</p>
+<p>Función que gatilla la revisión comparativa entre horarios de operación según el Anexo 1 y la programación de primera y última salida del día según Anexo 4. La función llama al proceso interno (siempre que haya un Anexo 1 Nuevo cargado y un Anexo 4 Nuevo cargado) y luego genera una ventana emergente con dos posibles resultados: un mensaje de que ambos archivos son consistentes, o una tabla comparativa con los parámetros que no coinciden. </p>
+<p>También se presentan algunos botones para filtrar la información de la tabla por tipo de día, o parámetro de comparación.</p>
+<p>Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue.</p>
+<hr />
+<h3 id="panel_po_uscomp_param_a3_a4"><span style="font-size:0.7em;">panel_po_us</span><span style="font-size:1.2em;">.<strong>comp_param_a3_a4</strong></span></h3>
+<p>panel_po_us._<strong>comp_param_a3_a4</strong>()</p>
+<p>Función que gatilla la revisión comparativa entre parámetros de operación según el Anexo 3 y el Anexo 4. La función llama al proceso interno (siempre que haya un Anexo 1 Nuevo cargado y un Anexo 4 Nuevo cargado) y luego genera una ventana emergente con dos posibles resultados: un mensaje de que ambos archivos son consistentes, o una tabla comparativa con los parámetros que no coinciden. </p>
+<p>También se presentan algunos botones para filtrar la información de la tabla por tipo de día, o parámetro de comparación.</p>
+<p>Si se presenta la tabla, además se presenta un botón para convertir la información en un archivo Excel que se descargue.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../archivo_core/" class="btn btn-neutral float-left" title="Back End (Proceso interno)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../clase_PanelUS/" class="btn btn-neutral float-right" title="Clase PanelUS">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../archivo_core/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clase_PanelUS/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
